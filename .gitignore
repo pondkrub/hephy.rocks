@@ -1,0 +1,3 @@
+tls/ca-key.pem
+tls/flux-helm-operator-key.pem
+tls/server-key.pem
