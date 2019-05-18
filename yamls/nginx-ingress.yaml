@@ -1,0 +1,21 @@
+# nginx-ingress.yaml
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: nginx-ingress
+spec:
+  finalizers:
+  - kubernetes
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: ingress
+  namespace: nginx-ingress
+spec:
+  releaseName: ingress
+  chart:
+    git: git@github.com:yebyen/hephy.rocks.git
+    path: nginx-ingress
+    ref: master

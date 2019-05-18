@@ -1,0 +1,23 @@
+# cert-manager.yaml
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    certmanager.k8s.io/disable-validation: "true"
+  name: cert-manager
+spec:
+  finalizers:
+  - kubernetes
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: cert-manager
+  namespace: cert-manager
+spec:
+  releaseName: cert-manager
+  chart:
+    git: git@github.com:yebyen/hephy.rocks.git
+    path: cert-manager
+    ref: master
