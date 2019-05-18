@@ -8,5 +8,8 @@ helm upgrade --install \
     --set helmOperator.tls.verify=true \
     --set helmOperator.tls.secretName=helm-client \
     --set helmOperator.tls.caContent="$(cat ./tls/ca.pem)" \
+    --set helmOperator.configureRepositories.enable=true \
+    --set 'helmOperator.configureRepositories.repositories[0].name=hephy' \
+    --set 'helmOperator.configureRepositories.repositories[0].url="https://charts.teamhephy.com"' \
     flux \
     weaveworks/flux
