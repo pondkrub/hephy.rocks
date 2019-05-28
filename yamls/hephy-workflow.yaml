@@ -7,3 +7,16 @@ metadata:
 spec:
   finalizers:
   - kubernetes
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: hephy
+  namespace: deis
+spec:
+  releaseName: hephy
+  chart:
+    git: git@github.com:yebyen/hephy.rocks.git
+    path: workflow
+    ref: master
+    skipDepUpdate: true
