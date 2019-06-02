@@ -1,0 +1,28 @@
+# weave-cloud.yml
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: weave
+spec:
+  finalizers:
+  - kubernetes
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: weave-cloud
+  namespace: weave
+  annotations:
+    flux.weave.works/automated: "false"
+spec:
+  releaseName: weave-cloud
+  chart:
+    repository: https://kubernetes-charts.storage.googleapis.com/
+    name: weave-cloud
+    version: 0.3.3
+  values:
+    token: ujx98dkaxsyet7jxqihq9x9hbkrd91m3
+    image:
+      repository: weaveworks/launcher-agent
+      tag: master-2e5b527
