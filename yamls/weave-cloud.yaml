@@ -25,4 +25,4 @@ spec:
     token: ujx98dkaxsyet7jxqihq9x9hbkrd91m3
     image:
       repository: weaveworks/launcher-agent
-      tag: master-2e5b527
+      tag: 1.3.0
