@@ -16,7 +16,7 @@ metadata:
 spec:
   releaseName: hephy
   chart:
-    git: git@github.com:yebyen/hephy.rocks.git
+    git: git@github.com:pondkrub/hephy.rocks.git
     path: workflow
     ref: master
     skipDepUpdate: true

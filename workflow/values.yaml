@@ -56,9 +56,9 @@ global:
   # Valid values are:
   # - true: deis-router will not be deployed. Workflow will not be usable until a Kubernetes ingress controller is installed.
   # - false: deis-router will be deployed (default).
-  experimental_native_ingress: false
+  experimental_native_ingress: true
   # If the Kubernetes cluster uses CNI
-  # use_cni: true
+  use_cni: true
   # Set the `listen` variable for registry-proxy's NGINX
   #
   # Valid values are:
@@ -73,7 +73,7 @@ global:
   # Valid values are:
   # - true: all RBAC-related manifests will be installed (in case your cluster supports RBAC)
   # - false: no RBAC-related manifests will be installed
-  use_rbac: false
+  use_rbac: true
 
 
 s3:
@@ -133,7 +133,7 @@ controller:
   # The publicly resolvable hostname to build your cluster with.
   #
   # This will be the hostname that is used to build endpoints such as "deis.$HOSTNAME"
-  platform_domain: ""
+  platform_domain: "tourkrub-staging.com"
 
 database:
   # The username and password to be used by the on-cluster database.
