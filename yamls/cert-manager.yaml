@@ -18,6 +18,6 @@ metadata:
 spec:
   releaseName: cert-manager
   chart:
-    git: git@github.com:yebyen/hephy.rocks.git
+    git: git@github.com:pondkrub/hephy.rocks.git
     path: cert-manager
     ref: master

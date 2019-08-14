@@ -16,6 +16,6 @@ metadata:
 spec:
   releaseName: ingress
   chart:
-    git: git@github.com:yebyen/hephy.rocks.git
+    git: git@github.com:pondkrub/hephy.rocks.git
     path: nginx-ingress
     ref: master
