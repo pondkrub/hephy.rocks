@@ -1,15 +1,15 @@
 dependencies:
   - name: builder
-    version: "v2.13.1"
+    version: "v2.13.2"
     repository: https://charts.teamhephy.com
   - name: slugbuilder
-    version: "v2.7.1"
+    version: "v2.7.2"
     repository: https://charts.teamhephy.com
   - name: dockerbuilder
     version: "v2.8.0"
     repository: https://charts.teamhephy.com
   - name: controller
-    version: "v2.20.2"
+    version: "v2.20.4"
     repository: https://charts.teamhephy.com
   - name: slugrunner
     version: "v2.6.1"
@@ -18,7 +18,7 @@ dependencies:
     version: "v2.7.3"
     repository: https://charts.teamhephy.com
   - name: fluentd
-    version: "v2.13.1"
+    version: "v2.14.0"
     repository: https://charts.teamhephy.com
   - name: redis
     version: "v2.4.0"
