@@ -1,5 +1,5 @@
-export YOUR_GIT_REPO=git@github.com:yebyen/hephy.rocks.git
-helm repo add weaveworks https://weaveworks.github.io/flux
+export YOUR_GIT_REPO=git@github.com:pondkrub/hephy.rocks.git
+helm repo add fluxcd https://fluxcd.github.io/flux
 
 helm upgrade --install \
     --set helmOperator.create=true \
@@ -12,4 +12,4 @@ helm upgrade --install \
     --set 'helmOperator.configureRepositories.repositories[0].name=hephy' \
     --set 'helmOperator.configureRepositories.repositories[0].url="https://charts.teamhephy.com"' \
     flux \
-    weaveworks/flux
+    fluxcd/flux
