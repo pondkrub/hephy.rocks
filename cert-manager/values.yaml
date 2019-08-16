@@ -90,7 +90,7 @@ nodeSelector: {}
 
 ingressShim:
   defaultIssuerName: "letsencrypt-staging"
-  defaultIssuerKind: "Issuer"
+  defaultIssuerKind: "ClusterIssuer"
   # defaultACMEChallengeType: ""
   # defaultACMEDNS01ChallengeProvider: ""
 
